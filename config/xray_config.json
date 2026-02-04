@@ -1,0 +1,35 @@
+# فایل xray_config.json
+{
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": []
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/letsencrypt/live/YOUR_DOMAIN/fullchain.pem",
+              "keyFile": "/etc/letsencrypt/live/YOUR_DOMAIN/privkey.pem"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ],
+  "log": {
+    "access": "logs/access.log",
+    "error": "logs/error.log",
+    "loglevel": "info"
+  }
+}
