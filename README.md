@@ -34,7 +34,7 @@ xray-management/
 3. اجرای Installer:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/IR-DevCo/ir-vpn-Panel/main/installer/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/IR-DevCo/ir-vpn-Panel/main/install.sh)
 ```
 
 4. وارد کردن دامنه برای SSL
